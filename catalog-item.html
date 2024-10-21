@@ -29,7 +29,7 @@
                         </svg>
                         Каталог
                     </button>
-                    <search class="header__search" role="search">
+                    <search class="header__search" role="search" data-link-redirect-mobile="search.html">
                         <form action="" class="header__form">
                             <label class="header__form-label" for="">
                                 <button class="header__form-btn" aria-label="Кнопка формы поиска" type="submit">
@@ -2475,7 +2475,7 @@
     <div class="footer__inner container">
         <div class="footer__row footer__row_top">
             <div class="footer__box">
-                <a href="/" class="footer__logo logo">
+                <a href="/" class="footer__logo logo" data-da=" .footer__social-item.footer__social-item_mob-logo, 480, first">
                     <img src="local/templates/main/images/logo_white.svg" alt="">
                 </a>
                 <a href="#!" class="footer__link-kp">
@@ -2486,16 +2486,16 @@
                     </svg>
                     Запросить КП
                 </a>
-                <a href="#!" class="footer__link-download">
+                <a href="#!" class="footer__link-download" data-da=".footer__row-list-item.footer__row-list-item_download, 480, first">
                     Скачать реквизиты организации
                 </a>
-                <p class="footer__copyright">
+                <p class="footer__copyright" data-da=".footer__rights-reserved, 480, first">
                     Все материалы, размещенные на<br>
                     данном сайте, являются<br>
                     собственностью ООО Cir-Lok
                 </p>
             </div>
-            <ul class="footer__list">
+            <ul class="footer__list footer__list_first">
                 <li class="footer__list-item">
                     <a href="#" class="footer__list-item-link">
                         Каталог
@@ -2512,7 +2512,7 @@
                     </a>
                 </li>
             </ul>
-            <ul class="footer__list">
+            <ul class="footer__list footer__list_seconds">
                 <li class="footer__list-item">
                     <a href="#" class="footer__list-item-link">
                         О компании
@@ -2530,6 +2530,7 @@
                 </li>
             </ul>
             <ul class="footer__social">
+                <li class="footer__social-item footer__social-item_mob-logo"></li>
                 <li class="footer__social-item">
                     <a href="tel:+88003332762" class="footer__social-item-link">
                         <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2568,6 +2569,7 @@
         </div>
         <div class="footer__row footer__row_bottom">
             <ul class="footer__row-list">
+                <li class="footer__row-list-item footer__row-list-item_download"></li>
                 <li class="footer__row-list-item">
                     <a href="#" class="footer__row-list-link">
                         © 2022 ООО "Цирлок Рус" 
@@ -2589,6 +2591,8 @@
                     </a>
                 </li>
             </ul>
+        </div>
+        <div class="footer__rights-reserved">
         </div>
     </div>
 </footer>

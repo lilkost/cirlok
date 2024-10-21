@@ -1,179 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        :root {
-            --index: calc(1vw + 1vh);
-            --transition: cubic-bezier(.1, .7, 0, 1);
-        }
-        body {
-            background-color: #141414;
-        }
-        .wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
-        .items {
-            display: flex;
-            gap: .4rem;
-            perspective: calc(var(--index) * 35);
-        }
-        .item {
-            background-color: #222;
-            width: calc(var(--index) * 3);
-            height: calc(var(--index) * 12);
-            background-size: cover;
-            background-position: center;
-            cursor: pointer;
-            transition: transform 1.25s var(--transition), filter 3s var(--transition), width 1.25s var(--transition);
-            will-change: transform, filter;
-            filter: grayscale() brightness(.5);
-        }
-        .item::before, .item::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 100%;
-            right: calc(var(--index) * -1);
-        }
-        .item::after {
-            left: calc(var(--index) * -1);
-        }
-        .items .item:hover {
-            transform: translateZ(calc(var(--index) * 10));
-            filter: inherit;
-        }
-        
-        /* Right */
-        
-        .items .item:hover + * {
-            transform: translateZ(calc(var(--index) * 8.5)) rotateY(35deg);
-            filter: inherit;
-            z-index: -1;
-        }
-        .items .item:hover + * + * {
-            transform: translateZ(calc(var(--index) * 5.6)) rotateY(40deg);
-            filter: inherit;
-            z-index: -2;
-        }
-        .items .item:hover + * + * + * {
-            transform: translateZ(calc(var(--index) * 2.4)) rotateY(30deg);
-            filter: inherit;
-            z-index: -3;
-        }
-        .items .item:hover + * + * + * + * {
-            transform: translateZ(calc(var(--index) * .6)) rotateY(14deg);
-            filter: inherit;
-            z-index: -4;
-        }
-        
-        /* Left */
-        
-        .item:has(+ :hover) {
-            transform: translateZ(calc(var(--index) * 8.5)) rotateY(-35deg);
-            filter: inherit;
-        }
-        .item:has(+ * + :hover) {
-            transform: translateZ(calc(var(--index) * 5.6)) rotateY(-40deg);
-            filter: inherit;
-        }
-        .item:has(+ * + * + :hover) {
-            transform: translateZ(calc(var(--index) * 2.4)) rotateY(-30deg);
-            filter: inherit;
-        }
-        .item:has(+ * + * + * + :hover) {
-            transform: translateZ(calc(var(--index) * .6)) rotateY(-14deg);
-            filter: inherit;
-        }
-        
-        .items .item:active, .items .item:focus {
-            width: 28vw;
-            transform: translateZ(calc(var(--index) * 10));
-            filter: inherit;
-            z-index: 100;
-            margin: 0 .45vw;
-        }
-        .current-page{
-            position: absolute;
-            top: 20px;
-            background-color: #2e2e2e;
-            color: white;
-            font-size: 20px;
-            min-width: 200px;
-            min-height: 50px;
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 20px;
-        }
-
-        .current-page {
-            background: linear-gradient(to right, #7c7c7c 20%, #bada55 30%, #bada44 70%, #7c7c7c 80%);
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-fill-color: transparent;
-            background-size: 200% auto;
-            animation: textShine 7s ease-in-out infinite alternate;
-            }
-
-            @keyframes textShine {
-                to {
-                    background-position: 200%;
-                }
-            }
-
-        </style>
-        
-        <div class="wrapper">
-            <div class="current-page">
-                Страница:
-            </div>
-            <div class="items">
-                <a data-name="Главная" href="https://lilkost.github.io/cirlok/" class="item" tabindex="1" style="background-image: url(image-deleted/1.png)"></a>
-                <a data-name="Новости общая" href="https://lilkost.github.io/cirlok/news.html" class="item" tabindex="1" style="background-image: url(image-deleted/2.png)"></a>
-                <a data-name="Новость отдельно" href="https://lilkost.github.io/cirlok/detail.html" class="item" tabindex="1" style="background-image: url(image-deleted/3.png)"></a>
-                <a data-name="Контакты" href="https://lilkost.github.io/cirlok/contact.html" class="item" tabindex="1" style="background-image: url(image-deleted/4.png)"></a>
-                <a data-name="О компании" href="https://lilkost.github.io/cirlok/about.html" class="item" tabindex="1" style="background-image: url(image-deleted/5.png)"></a>
-                <a data-name="Сертификаты" href="https://lilkost.github.io/cirlok/certificate.html" class="item" tabindex="1" style="background-image: url(image-deleted/6.png)"></a>
-                <a data-name="Вакансии" href="https://lilkost.github.io/cirlok/vacancy.html" class="item" tabindex="1" style="background-image: url(image-deleted/7.png)"></a>
-                <a data-name="Поставщикам" href="https://lilkost.github.io/cirlok/suppliers.html" class="item" tabindex="1" style="background-image: url(image-deleted/8.png)"></a>
-                <a data-name="Каталог (новый)" href="https://lilkost.github.io/cirlok/catalog.html" class="item" tabindex="1" style="background-image: url(image-deleted/9.png)"></a>
-                <a data-name="Каталог под раздел" href="https://lilkost.github.io/cirlok/catalog-item.html" class="item" tabindex="1" style="background-image: url(image-deleted/10.png)"></a>
-                <a data-name="Карточка товара" href="https://lilkost.github.io/cirlok/prodcut.html" class="item" tabindex="1" style="background-image: url(image-deleted/11.png)"></a>
-                <a data-name="Козина с ценами" href="https://lilkost.github.io/cirlok/basket.html" class="item" tabindex="1" style="background-image: url(image-deleted/12.png)"></a>
-                <a data-name="Корзина без цен" href="https://lilkost.github.io/cirlok/basket_no_sum.html" class="item" tabindex="1" style="background-image: url(image-deleted/13.png)"></a>
-                <a data-name="Оформление заказа" href="https://lilkost.github.io/cirlok/form-order.html" class="item" tabindex="1" style="background-image: url(image-deleted/14.png)"></a>
-                <a data-name="Конфигуратор" href="https://lilkost.github.io/cirlok/conf-fitings.html" class="item" tabindex="1" style="background-image: url(image-deleted/15.png)"></a>
-            </div>
-        
-        </div>
-    <script>
-        const items = document.querySelectorAll('.item');
-        const textParentNode = document.querySelector('.current-page');
-        items.forEach(item=> {
-            item.addEventListener("mouseover", ()=> {
-                textParentNode.innerHTML = item.getAttribute('data-name');
-            });
-            item.addEventListener("mouseout", ()=> {
-                textParentNode.innerHTML = "";
-            })
-        })
-    </script>
-</body>
-</html>
+<style>
+    ul.l {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 30px;
+    }
+</style>
+<ul class="l container">
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/d.html">
+            <img src="image-deleted/d.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/">
+            <img src="image-deleted/1.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/news.html">
+            <img src="image-deleted/2.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/detail.html">
+            <img src="image-deleted/3.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/contact.html">
+            <img src="image-deleted/4.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/about.html">
+            <img src="image-deleted/5.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/certificate.html">
+            <img src="image-deleted/6.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/vacancy.html">
+            <img src="image-deleted/7.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/suppliers.html">
+            <img src="image-deleted/8.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/catalog.html">
+            <img src="image-deleted/9.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/catalog-item.html">
+            <img src="image-deleted/10.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/prodcut.html">
+            <img src="image-deleted/11.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/basket.html">
+            <img src="image-deleted/12.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/basket_no_sum.html">
+            <img src="image-deleted/13.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/form-order.html">
+            <img src="image-deleted/14.png" alt="">
+        </a>
+    </li>
+    <li class="i">
+        <a href="https://lilkost.github.io/cirlok/conf-fitings.html">
+            <img src="image-deleted/15.png" alt="">
+        </a>
+    </li>
+</ul>
