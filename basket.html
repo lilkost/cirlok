@@ -23,10 +23,11 @@
                         <img src="local/templates/main/images/logo.svg" alt="cir-lock">
                     </a>
                     <button class="header__btn btn_blue" type="button">
-                        <svg width="19" height="14" viewBox="0 0 19 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M1.5 1H17.5M1.5 7H17.5M1.5 13H17.5" stroke="white" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
+                        <div class="header__btn-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                         Каталог
                     </button>
                     <search class="header__search" role="search" data-link-redirect-mobile="search.html">
@@ -194,10 +195,173 @@
                 </div>
             </div>
         </header>
+
+        <div class="header-catalog">
+            <div class="header-catalog__box">
+                <img class="header-catalog__img" src="local/templates/main/images/catalog/modal/1.png">
+                <ul class="header-catalog__list">
+                    <li class="header-catalog__item header-catalog__item_title">Обжимные фитинги</li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги для соединения трубок</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с внешней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с внутренней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с трубным адаптером</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Переходники</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Трубный адаптер с внешней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Трубный адаптер с внутренней резьбой</a></li>
+                </ul>
+            </div>
+            <div class="header-catalog__box">
+                <img class="header-catalog__img" src="local/templates/main/images/catalog/modal/2.png">
+                <ul class="header-catalog__list">
+                    <li class="header-catalog__item header-catalog__item_title">Обжимные фитинги</li>
+                    <li class="header-catalog__item">
+                        <div class="header-catalog__item-accordion">
+                            <div class="header-catalog__item-accordion-top">
+                                Фитинги для соединения 
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 6.75L9 11.25L4.5 6.75" stroke="#1F1F1F" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <ul class="header-catalog__item-accordion-body">
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Муфты</a>
+                                </li>
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Переходные муфты</a>
+                                </li>
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Муфты для монтажа на панель</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header-catalog__item">
+                        <div class="header-catalog__item-accordion">
+                            <div class="header-catalog__item-accordion-top">
+                                Фитинги с внешней резьбой
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 6.75L9 11.25L4.5 6.75" stroke="#1F1F1F" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <ul class="header-catalog__item-accordion-body">
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Муфты</a>
+                                </li>
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Переходные муфты</a>
+                                </li>
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Муфты для монтажа на панель</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header-catalog__item">
+                        <div class="header-catalog__item-accordion">
+                            <div class="header-catalog__item-accordion-top">
+                                Фитинги с внутренней резьбой
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 6.75L9 11.25L4.5 6.75" stroke="#1F1F1F" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <ul class="header-catalog__item-accordion-body">
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Муфты</a>
+                                </li>
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Переходные муфты</a>
+                                </li>
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Муфты для монтажа на панель</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header-catalog__item">
+                        <div class="header-catalog__item-accordion">
+                            <div class="header-catalog__item-accordion-top">
+                                Фитинги с трубным адаптером
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.5 6.75L9 11.25L4.5 6.75" stroke="#1F1F1F" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <ul class="header-catalog__item-accordion-body">
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Муфты</a>
+                                </li>
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Переходные муфты</a>
+                                </li>
+                                <li class="header-catalog__item-accordion-item">
+                                    <a href="" class="header-catalog__item-accordion-link">Муфты для монтажа на панель</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Переходники</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Трубный адаптер с внешней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Трубный адаптер с внутренней резьбой</a></li>
+                </ul>
+            </div>
+            <div class="header-catalog__box">
+                <img class="header-catalog__img" src="local/templates/main/images/catalog/modal/3.png">
+                <ul class="header-catalog__list">
+                    <li class="header-catalog__item header-catalog__item_title">Обжимные фитинги</li>
+                    <li class="header-catalog__item">
+                        <a href="" class="header-catalog__link">Фитинги для соединения трубок</a>
+                    </li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с внешней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с внутренней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с трубным адаптером</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Переходники</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Трубный адаптер с внешней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Трубный адаптер с внутренней резьбой</a></li>
+                </ul>
+            </div>
+            <div class="header-catalog__box">
+                <img class="header-catalog__img" src="local/templates/main/images/catalog/modal/4.png">
+                <ul class="header-catalog__list">
+                    <li class="header-catalog__item header-catalog__item_title">Обжимные фитинги</li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги для соединения трубок</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с внешней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с внутренней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с трубным адаптером</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Переходники</a></li>
+                </ul>
+            </div>
+            <div class="header-catalog__box">
+                <img class="header-catalog__img" src="local/templates/main/images/catalog/modal/5.png">
+                <ul class="header-catalog__list">
+                    <li class="header-catalog__item header-catalog__item_title">Обжимные фитинги</li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги для соединения трубок</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с внешней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с внутренней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с трубным адаптером</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Переходники</a></li>
+                </ul>
+            </div>
+            <div class="header-catalog__box">
+                <img class="header-catalog__img" src="local/templates/main/images/catalog/modal/6.png">
+                <ul class="header-catalog__list">
+                    <li class="header-catalog__item header-catalog__item_title">Обжимные фитинги</li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги для соединения трубок</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с внешней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с внутренней резьбой</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Фитинги с трубным адаптером</a></li>
+                    <li class="header-catalog__item"><a href="#" class="header-catalog__link">Переходники</a></li>
+                </ul>
+            </div>
+        </div>
+
         <main class="main">
 <style>
     .breadcrumbs{
         padding-block: 20px 16px;
+    }
+    @media (max-width: 480px) {
+        .breadcrumbs{
+            padding-block: 20px 19px;
+        }
     }
 </style>
 <div class="breadcrumbs container">
@@ -212,21 +376,29 @@
 </div>
 <div class="basket container">
     <div class="basket__top">
-        <h2 class="basket__title title">Корзина</h2>
-        <a href="#!" download="" class="basket__pdf-link">
+        <a class="basket__link-back" href="catalog.html" target="_blank">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 13.0002V19.0002C4 19.5524 4.44772 20.0002 5 20.0002H19C19.5523 20.0002 20 19.5524 20 19.0002V13.0002H22V19.0002C22 20.657 20.6569 22.0002 19 22.0002H5C3.34315 22.0002 2 20.657 2 19.0002V13.0002H4Z" fill="#005E9E"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 17.0002V7.41436L15.2929 9.70726L16.7071 8.29304L12 3.58594L7.29289 8.29304L8.70711 9.70726L11 7.41436V17.0002H13Z" fill="#005E9E"/>
+                <path d="M5 12H19M5 12L9 16M5 12L9 8" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            Сохранить корзину в PDF
+            К выбору товаров
         </a>
-        <button class="basket__btn-clear">
-            Отчистить корзину
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.79289 13.7071L10.5858 15.5L8.79289 17.2929L10.2071 18.7071L12 16.9142L13.7929 18.7071L15.2071 17.2929L13.4142 15.5L15.2071 13.7071L13.7929 12.2929L12 14.0858L10.2071 12.2929L8.79289 13.7071Z" fill="#005E9E"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1C7.89543 1 7 1.89543 7 3V4H4C2.89543 4 2 4.89543 2 6V8C2 9.10457 2.89543 10 4 10H4.07397L4.8609 20.2301C4.98113 21.7931 6.28445 23 7.85206 23H16.1479C17.7155 23 19.0189 21.7931 19.1391 20.2301L19.926 10H20C21.1046 10 22 9.10457 22 8V6C22 4.89543 21.1046 4 20 4H17V3C17 1.89543 16.1046 1 15 1H9ZM15 4H9V3H15V4ZM6.85501 20.0767L6.07988 10H17.9201L17.145 20.0767C17.1049 20.5977 16.6705 21 16.1479 21H7.85206C7.32953 21 6.89508 20.5977 6.85501 20.0767ZM4 8V6H20V8H4Z" fill="#005E9E"/>
-            </svg>
-        </button>
+        <h2 class="basket__title title">Корзина</h2>
+        <div class="basket__top-row">
+            <a href="#!" download="" class="basket__pdf-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 13.0002V19.0002C4 19.5524 4.44772 20.0002 5 20.0002H19C19.5523 20.0002 20 19.5524 20 19.0002V13.0002H22V19.0002C22 20.657 20.6569 22.0002 19 22.0002H5C3.34315 22.0002 2 20.657 2 19.0002V13.0002H4Z" fill="#005E9E"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 17.0002V7.41436L15.2929 9.70726L16.7071 8.29304L12 3.58594L7.29289 8.29304L8.70711 9.70726L11 7.41436V17.0002H13Z" fill="#005E9E"/>
+                </svg>
+                Сохранить корзину в PDF
+            </a>
+            <button class="basket__btn-clear">
+                Отчистить корзину
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.79289 13.7071L10.5858 15.5L8.79289 17.2929L10.2071 18.7071L12 16.9142L13.7929 18.7071L15.2071 17.2929L13.4142 15.5L15.2071 13.7071L13.7929 12.2929L12 14.0858L10.2071 12.2929L8.79289 13.7071Z" fill="#005E9E"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9 1C7.89543 1 7 1.89543 7 3V4H4C2.89543 4 2 4.89543 2 6V8C2 9.10457 2.89543 10 4 10H4.07397L4.8609 20.2301C4.98113 21.7931 6.28445 23 7.85206 23H16.1479C17.7155 23 19.0189 21.7931 19.1391 20.2301L19.926 10H20C21.1046 10 22 9.10457 22 8V6C22 4.89543 21.1046 4 20 4H17V3C17 1.89543 16.1046 1 15 1H9ZM15 4H9V3H15V4ZM6.85501 20.0767L6.07988 10H17.9201L17.145 20.0767C17.1049 20.5977 16.6705 21 16.1479 21H7.85206C7.32953 21 6.89508 20.5977 6.85501 20.0767ZM4 8V6H20V8H4Z" fill="#005E9E"/>
+                </svg>
+            </button>
+        </div>
     </div>
     <div class="basket-table">
         <div class="basket-table__header">
@@ -243,8 +415,8 @@
                 <div class="basket-table__body-col basket-table__body-col_img">
                     <img src="local/templates/main/images/basket/1.png" alt="">
                 </div>
-                <div class="basket-table__body-col basket-table__body-col_name">BS1-GFS8-08-</div>
-                <div class="basket-table__body-col basket-table__body-col_art">Hy-Lok 2mm</div>
+                <div class="basket-table__body-col basket-table__body-col_name" data-name-des="BS1-GFS8-08-" data-name-mob="Арт. BS1-GFS8-08-">BS1-GFS8-08-</div>
+                <div class="basket-table__body-col basket-table__body-col_art" data-name-des="Hy-Lok 2mm" data-name-mob="Арт. Hy-Lok 2mm">Hy-Lok 2mm</div>
                 <div class="basket-table__body-col basket-table__body-col_count">
                     <div class="count">
                         <button class="count-btn-minus is-disabled" type="button" disabled aria-label="Уменьшить колличество">
@@ -277,8 +449,8 @@
                 <div class="basket-table__body-col basket-table__body-col_img">
                     <img src="local/templates/main/images/basket/2.png" alt="">
                 </div>
-                <div class="basket-table__body-col basket-table__body-col_name">BS1-GFS4-04-</div>
-                <div class="basket-table__body-col basket-table__body-col_art">Hy-Lok 2mm</div>
+                <div class="basket-table__body-col basket-table__body-col_name" data-name-des="BS1-GFS4-04-" data-name-mob="Арт. BS1-GFS4-04-">BS1-GFS4-04-</div>
+                <div class="basket-table__body-col basket-table__body-col_art" data-name-des="Hy-Lok 2mm" data-name-mob="Арт. Hy-Lok 2mm">Hy-Lok 2mm</div>
                 <div class="basket-table__body-col basket-table__body-col_count">
                     <div class="count">
                         <button class="count-btn-minus is-disabled" disabled type="button" aria-label="Уменьшить колличество">
@@ -311,8 +483,8 @@
                 <div class="basket-table__body-col basket-table__body-col_img">
                     <img src="local/templates/main/images/basket/3.png" alt="">
                 </div>
-                <div class="basket-table__body-col basket-table__body-col_name">BS1-GFS8-08-</div>
-                <div class="basket-table__body-col basket-table__body-col_art">Hy-Lok 2mm</div>
+                <div class="basket-table__body-col basket-table__body-col_name" data-name-des="BS1-GFS8-08-" data-name-mob="Арт. BS1-GFS8-08-">BS1-GFS8-08-</div>
+                <div class="basket-table__body-col basket-table__body-col_art" data-name-des="Hy-Lok 2mm" data-name-mob="Арт. Hy-Lok 2mm">Hy-Lok 2mm</div>
                 <div class="basket-table__body-col basket-table__body-col_count">
                     <div class="count">
                         <button class="count-btn-minus is-disabled" disabled type="button" aria-label="Уменьшить колличество">
@@ -377,7 +549,7 @@
     </div>
 </div>
 <section class="questions questions_mb container">
-    <div class="questions__inner">
+    <div class="questions__inner questions__inner_mob-pb-94">
         <div class="questions__box">
             <h2 class="questions__title questions__title_mb title">
             Остались вопросы?
@@ -451,8 +623,8 @@
                     Скачать реквизиты организации
                 </a>
                 <p class="footer__copyright" data-da=".footer__rights-reserved, 480, first">
-                    Все материалы, размещенные на<br>
-                    данном сайте, являются<br>
+                    Все материалы, размещенные на <br>
+                    данном сайте, являются <br>
                     собственностью ООО Cir-Lok
                 </p>
             </div>
