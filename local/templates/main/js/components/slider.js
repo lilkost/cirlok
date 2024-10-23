@@ -5,10 +5,6 @@ const createdSliders = () => {
 
         effect: 'fade',
 
-        // autoplay: {
-        //     delay: 5000,
-        // },
-
         pagination: {
             el: '.slider-banner-pagination'
         },
@@ -38,7 +34,7 @@ const createdSliders = () => {
             spaceBetween: 20,
             // If we need pagination
             pagination: {
-                el: '.swiper-pagination',
+                el: '.new-products__pagination',
             },
 
             // Navigation arrows
@@ -51,6 +47,29 @@ const createdSliders = () => {
             scrollbar: {
                 el: '.new-products__slider-scrollbar',
             },
+
+            breakpoints:{
+                1161: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                860: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                }, 
+                568: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                280: {
+                    slidesPerView: 1.55,
+                    spaceBetween: 10,
+                }
+            }
         });
     }
 
@@ -69,11 +88,35 @@ const createdSliders = () => {
                 nextEl: '.certificate__slider-button-next',
                 prevEl: '.certificate__slider-button-prev',
             },
-
+            pagination: {
+                el: ".certificate__slider-pagination"
+            },
             // And if we need scrollbar
             scrollbar: {
                 el: '.certificate__slider-scrollbar',
             },
+            breakpoints:{
+                1161: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                860: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                    spaceBetween: 20,
+                }, 
+                568: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                280: {
+                    slidesPerView: 1.55,
+                    spaceBetween: 10,
+                }
+            }
         });
     }
 
@@ -92,6 +135,28 @@ const createdSliders = () => {
                 nextEl: '.about-page__clients-btn-next',
                 prevEl: '.about-page__clients-btn-prev',
             },
+            breakpoints: {
+                1161: {
+                    slidesPerView: 5,
+                    spaceBetween: 20,
+                },
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                }, 
+                568: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                280: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                }
+            }
         });
     }
 

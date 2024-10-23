@@ -20,6 +20,10 @@ const modal = () => {
         }
     }
 
+    const toggleClass = (el, classNode) => {
+        el.classList.toggle(classNode);
+    }
+
     // cookie's
     if(document.querySelector('.cookies-modal')) {
         const modal      = document.querySelector('.cookies-modal');
@@ -136,6 +140,22 @@ const modal = () => {
         window.addEventListener("keyup", (e)=> closeModalESC(e, modal));
 
         window.addEventListener('click', (e)=> handleClickHiddenBlock(e, modal))
+    }
+
+    if(document.querySelector('.header-catalog')) {
+        const modal = document.querySelector('.header-catalog');
+        const headerSearch = document.querySelector('.header__search');
+        const btnCatalogOpen = document.querySelector('.header__btn');
+
+        btnCatalogOpen.addEventListener("click", ()=>{
+            toggleClass(modal, "is-open");
+
+            if(modal.classList.contains('is-open')) {
+                headerSearch.classList.remove('is-open');
+            }
+            btnCatalogOpen.classList.toggle('is-active');
+        });
+
     }
 }
 

@@ -7,6 +7,7 @@ const scrollPage = () => {
         const top = `${header.clientHeight}px`;
         mainNode.style = `--top: ${top}`;
     }
+
     topMain();
 
     const headerVisabilityRow = () => {
@@ -23,6 +24,7 @@ const scrollPage = () => {
     window.addEventListener("scroll", (e)=> {
         headerVisabilityRow();
     });
+
 }
 
 export default scrollPage;

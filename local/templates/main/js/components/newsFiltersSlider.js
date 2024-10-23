@@ -21,6 +21,34 @@ const newsFilterSlider = () => {
         scrollbar: {
             el: '.popular-news__slider-scrollbar',
         },
+        
+        pagination: {
+            el: '.popular-news__pagination'
+        },
+
+        breakpoints:{
+            1161: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            860: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2.5,
+                spaceBetween: 20,
+            }, 
+            568: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            280: {
+                slidesPerView: 1.55,
+                spaceBetween: 10,
+            },
+        }
+
     });
 
     // обновление swiper js

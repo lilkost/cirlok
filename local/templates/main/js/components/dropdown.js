@@ -127,6 +127,13 @@ const dropdown = () => {
 
         changeOpenDropdown(parent, openNode);
     }
+
+    if(document.querySelector('.header-catalog__item-accordion')) {
+        const parent = document.querySelectorAll('.header-catalog__item-accordion');
+        const openNode = '.header-catalog__item-accordion-top';
+
+        changeOpenDropdown(parent, openNode);
+    }
 }
 
 export default dropdown;

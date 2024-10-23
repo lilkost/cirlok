@@ -1,3 +1,4 @@
+import { useDynamicAdapt } from "./components/da.js";
 import createdSliders from "./components/slider.js";
 import categoryOpenInfo from "./components/categoryOpenInfo.js";
 import newsFilterSlider from "./components/newsFiltersSlider.js";
@@ -9,7 +10,9 @@ import dropdown from "./components/dropdown.js";
 import count from "./components/count.js";
 import catalogChangePosition from "./components/catalogChangePosition.js";
 import catalogInputChecked from "./components/catalogInputs.js";
+import textProductResize from "./components/textProductResize.js";
 
+useDynamicAdapt();
 scrollPage();
 modal();
 
@@ -25,3 +28,4 @@ count();
 
 catalogChangePosition();
 catalogInputChecked();
+textProductResize();
