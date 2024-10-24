@@ -358,6 +358,11 @@
         .breadcrumbs{
             padding-block: 20px 32px;
         }
+        @media (max-width: 480px) {
+            .breadcrumbs{
+                padding-block: 20px 22px;
+            }
+        }
     </style>
 
     <div class="breadcrumbs container">
@@ -377,7 +382,7 @@
     <!-- catalog -->
     <div class="catalog catalog_mb container">
         <div class="catalog__inner catalog__inner_mb">
-            <aside class="catalog__aside">
+            <aside class="catalog__aside" data-da=".catalog__main, 768, 1">
                 <div class="catalog__aside-slider-parent">
                     <div class="catalog__aside-slider">
                         <div class="swiper-wrapper">
@@ -1913,118 +1918,131 @@
                 <h2 class="catalog__title catalog__title_mb title">
                     Фитинги под приварку для чистых сред
                 </h2>
-                <ul class="catalog__category-list catalog__category-list_mb">
-                    <li class="catalog__category-item">
-                        <img src="local/templates/main/images/catalog/page/c1.png" alt="" class="catalog__category-item-img">
-                        <div class="catalog__category-item-info">
-                            <div class="catalog__category-item-info-box">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.6162 8.38375L12.6666 6.33333M5.54167 9.5C5.54167 8.45018 5.9587 7.44337 6.70104 6.70104C7.44337 5.9587 8.45018 5.54167 9.5 5.54167M16.625 9.5C16.625 13.435 13.435 16.625 9.5 16.625C5.56497 16.625 2.375 13.435 2.375 9.5C2.375 5.56497 5.56497 2.375 9.5 2.375C13.435 2.375 16.625 5.56497 16.625 9.5ZM10.2917 9.5C10.2917 9.93723 9.93723 10.2917 9.5 10.2917C9.06277 10.2917 8.70833 9.93723 8.70833 9.5C8.70833 9.06277 9.06277 8.70833 9.5 8.70833C9.93723 8.70833 10.2917 9.06277 10.2917 9.5Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                до 241 бар
+                <div class="catalog__category-slider-parent">
+                    <div class="catalog__category-list catalog__category-list_mb">
+                        <div class="swiper-wrapper is-columns">
+                            <div class="catalog__category-item swiper-slide">
+                                <img src="local/templates/main/images/catalog/page/c1.png" alt="" class="catalog__category-item-img">
+                                <div class="catalog__category-item-info">
+                                    <div class="catalog__category-item-info-box">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.6162 8.38375L12.6666 6.33333M5.54167 9.5C5.54167 8.45018 5.9587 7.44337 6.70104 6.70104C7.44337 5.9587 8.45018 5.54167 9.5 5.54167M16.625 9.5C16.625 13.435 13.435 16.625 9.5 16.625C5.56497 16.625 2.375 13.435 2.375 9.5C2.375 5.56497 5.56497 2.375 9.5 2.375C13.435 2.375 16.625 5.56497 16.625 9.5ZM10.2917 9.5C10.2917 9.93723 9.93723 10.2917 9.5 10.2917C9.06277 10.2917 8.70833 9.93723 8.70833 9.5C8.70833 9.06277 9.06277 8.70833 9.5 8.70833C9.93723 8.70833 10.2917 9.06277 10.2917 9.5Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        до 241 бар
+                                    </div>
+                                    <div class="catalog__category-item-info-box">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.91732 7.125H11.084M7.91732 10.6875C7.31362 11.036 6.8418 11.5741 6.57503 12.2181C6.30827 12.8621 6.26147 13.5762 6.44189 14.2495C6.62231 14.9228 7.01987 15.5178 7.57291 15.9422C8.12595 16.3666 8.80356 16.5966 9.50065 16.5966C10.1977 16.5966 10.8754 16.3666 11.4284 15.9422C11.9814 15.5178 12.379 14.9228 12.5594 14.2495C12.7398 13.5762 12.693 12.8621 12.4263 12.2181C12.1595 11.5741 11.6877 11.036 11.084 10.6875V3.95833C11.084 3.53841 10.9172 3.13568 10.6202 2.83875C10.3233 2.54181 9.92058 2.375 9.50065 2.375C9.08073 2.375 8.678 2.54181 8.38107 2.83875C8.08413 3.13568 7.91732 3.53841 7.91732 3.95833V10.6875Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        до 80 с
+                                    </div>
+                                </div>
+                                <strong class="catalog__category-item-title">
+                                    Регуляторы давления после себя<br> серии PR1
+                                </strong>
+                                <ul class="catalog__category-information-list">
+                                    <li class="catalog__category-information-item">Максимальное давление на входе<br> 241 бар (3500 фунт/кв. дюйм)</li>
+                                    <li class="catalog__category-information-item">Коэффициент расхода Cv=0.06</li>
+                                    <li class="catalog__category-information-item">Одноступенчатые</li>
+                                    <li class="catalog__category-information-item">Уплотнение мембраны типа металл-<br>металл</li>
+                                </ul>
                             </div>
-                            <div class="catalog__category-item-info-box">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.91732 7.125H11.084M7.91732 10.6875C7.31362 11.036 6.8418 11.5741 6.57503 12.2181C6.30827 12.8621 6.26147 13.5762 6.44189 14.2495C6.62231 14.9228 7.01987 15.5178 7.57291 15.9422C8.12595 16.3666 8.80356 16.5966 9.50065 16.5966C10.1977 16.5966 10.8754 16.3666 11.4284 15.9422C11.9814 15.5178 12.379 14.9228 12.5594 14.2495C12.7398 13.5762 12.693 12.8621 12.4263 12.2181C12.1595 11.5741 11.6877 11.036 11.084 10.6875V3.95833C11.084 3.53841 10.9172 3.13568 10.6202 2.83875C10.3233 2.54181 9.92058 2.375 9.50065 2.375C9.08073 2.375 8.678 2.54181 8.38107 2.83875C8.08413 3.13568 7.91732 3.53841 7.91732 3.95833V10.6875Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                до 80 с
+                            <div class="catalog__category-item swiper-slide">
+                                <img src="local/templates/main/images/catalog/page/c2.png" alt="" class="catalog__category-item-img">
+                                <div class="catalog__category-item-info">
+                                    <div class="catalog__category-item-info-box">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.6162 8.38375L12.6666 6.33333M5.54167 9.5C5.54167 8.45018 5.9587 7.44337 6.70104 6.70104C7.44337 5.9587 8.45018 5.54167 9.5 5.54167M16.625 9.5C16.625 13.435 13.435 16.625 9.5 16.625C5.56497 16.625 2.375 13.435 2.375 9.5C2.375 5.56497 5.56497 2.375 9.5 2.375C13.435 2.375 16.625 5.56497 16.625 9.5ZM10.2917 9.5C10.2917 9.93723 9.93723 10.2917 9.5 10.2917C9.06277 10.2917 8.70833 9.93723 8.70833 9.5C8.70833 9.06277 9.06277 8.70833 9.5 8.70833C9.93723 8.70833 10.2917 9.06277 10.2917 9.5Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        до 206 бар
+                                    </div>
+                                    <div class="catalog__category-item-info-box">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.91732 7.125H11.084M7.91732 10.6875C7.31362 11.036 6.8418 11.5741 6.57503 12.2181C6.30827 12.8621 6.26147 13.5762 6.44189 14.2495C6.62231 14.9228 7.01987 15.5178 7.57291 15.9422C8.12595 16.3666 8.80356 16.5966 9.50065 16.5966C10.1977 16.5966 10.8754 16.3666 11.4284 15.9422C11.9814 15.5178 12.379 14.9228 12.5594 14.2495C12.7398 13.5762 12.693 12.8621 12.4263 12.2181C12.1595 11.5741 11.6877 11.036 11.084 10.6875V3.95833C11.084 3.53841 10.9172 3.13568 10.6202 2.83875C10.3233 2.54181 9.92058 2.375 9.50065 2.375C9.08073 2.375 8.678 2.54181 8.38107 2.83875C8.08413 3.13568 7.91732 3.53841 7.91732 3.95833V10.6875Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        до 70 с
+                                    </div>
+                                </div>
+                                <strong class="catalog__category-item-title">
+                                    Регуляторы давления после себя<br> серии PR2
+                                </strong>
+                                <ul class="catalog__category-information-list">
+                                    <li class="catalog__category-information-item">Максимальное давление на входе<br> 241 бар (3500 фунт/кв. дюйм)</li>
+                                    <li class="catalog__category-information-item">Коэффициент расхода Cv=0.06</li>
+                                    <li class="catalog__category-information-item">Одноступенчатые</li>
+                                    <li class="catalog__category-information-item">Уплотнение мембраны типа металл-<br>металл</li>
+                                </ul>
+                            </div>
+                            <div class="catalog__category-item swiper-slide">
+                                <img src="local/templates/main/images/catalog/page/c3.png" alt="" class="catalog__category-item-img">
+                                <div class="catalog__category-item-info">
+                                    <div class="catalog__category-item-info-box">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.6162 8.38375L12.6666 6.33333M5.54167 9.5C5.54167 8.45018 5.9587 7.44337 6.70104 6.70104C7.44337 5.9587 8.45018 5.54167 9.5 5.54167M16.625 9.5C16.625 13.435 13.435 16.625 9.5 16.625C5.56497 16.625 2.375 13.435 2.375 9.5C2.375 5.56497 5.56497 2.375 9.5 2.375C13.435 2.375 16.625 5.56497 16.625 9.5ZM10.2917 9.5C10.2917 9.93723 9.93723 10.2917 9.5 10.2917C9.06277 10.2917 8.70833 9.93723 8.70833 9.5C8.70833 9.06277 9.06277 8.70833 9.5 8.70833C9.93723 8.70833 10.2917 9.06277 10.2917 9.5Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        до 241 бар
+                                    </div>
+                                    <div class="catalog__category-item-info-box">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.91732 7.125H11.084M7.91732 10.6875C7.31362 11.036 6.8418 11.5741 6.57503 12.2181C6.30827 12.8621 6.26147 13.5762 6.44189 14.2495C6.62231 14.9228 7.01987 15.5178 7.57291 15.9422C8.12595 16.3666 8.80356 16.5966 9.50065 16.5966C10.1977 16.5966 10.8754 16.3666 11.4284 15.9422C11.9814 15.5178 12.379 14.9228 12.5594 14.2495C12.7398 13.5762 12.693 12.8621 12.4263 12.2181C12.1595 11.5741 11.6877 11.036 11.084 10.6875V3.95833C11.084 3.53841 10.9172 3.13568 10.6202 2.83875C10.3233 2.54181 9.92058 2.375 9.50065 2.375C9.08073 2.375 8.678 2.54181 8.38107 2.83875C8.08413 3.13568 7.91732 3.53841 7.91732 3.95833V10.6875Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        до 80 с
+                                    </div>
+                                </div>
+                                <strong class="catalog__category-item-title">
+                                    Регуляторы давления после себя<br> серии PR3
+                                </strong>
+                                <ul class="catalog__category-information-list">
+                                    <li class="catalog__category-information-item">Максимальное давление на входе<br> 241 бар (3500 фунт/кв. дюйм)</li>
+                                    <li class="catalog__category-information-item">Коэффициент расхода Cv=0.06</li>
+                                    <li class="catalog__category-information-item">Одноступенчатые</li>
+                                    <li class="catalog__category-information-item">Уплотнение мембраны типа металл-<br>металл</li>
+                                </ul>
+                            </div>
+                            <div class="catalog__category-item swiper-slide">
+                                <img src="local/templates/main/images/catalog/page/c4.png" alt="" class="catalog__category-item-img">
+                                <div class="catalog__category-item-info">
+                                    <div class="catalog__category-item-info-box">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M10.6162 8.38375L12.6666 6.33333M5.54167 9.5C5.54167 8.45018 5.9587 7.44337 6.70104 6.70104C7.44337 5.9587 8.45018 5.54167 9.5 5.54167M16.625 9.5C16.625 13.435 13.435 16.625 9.5 16.625C5.56497 16.625 2.375 13.435 2.375 9.5C2.375 5.56497 5.56497 2.375 9.5 2.375C13.435 2.375 16.625 5.56497 16.625 9.5ZM10.2917 9.5C10.2917 9.93723 9.93723 10.2917 9.5 10.2917C9.06277 10.2917 8.70833 9.93723 8.70833 9.5C8.70833 9.06277 9.06277 8.70833 9.5 8.70833C9.93723 8.70833 10.2917 9.06277 10.2917 9.5Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        до 241 бар
+                                    </div>
+                                    <div class="catalog__category-item-info-box">
+                                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M7.91732 7.125H11.084M7.91732 10.6875C7.31362 11.036 6.8418 11.5741 6.57503 12.2181C6.30827 12.8621 6.26147 13.5762 6.44189 14.2495C6.62231 14.9228 7.01987 15.5178 7.57291 15.9422C8.12595 16.3666 8.80356 16.5966 9.50065 16.5966C10.1977 16.5966 10.8754 16.3666 11.4284 15.9422C11.9814 15.5178 12.379 14.9228 12.5594 14.2495C12.7398 13.5762 12.693 12.8621 12.4263 12.2181C12.1595 11.5741 11.6877 11.036 11.084 10.6875V3.95833C11.084 3.53841 10.9172 3.13568 10.6202 2.83875C10.3233 2.54181 9.92058 2.375 9.50065 2.375C9.08073 2.375 8.678 2.54181 8.38107 2.83875C8.08413 3.13568 7.91732 3.53841 7.91732 3.95833V10.6875Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                        до 80 с
+                                    </div>
+                                </div>
+                                <strong class="catalog__category-item-title">
+                                    Регуляторы давления после себя<br> серии PPR1 для чистых сред
+                                </strong>
+                                <ul class="catalog__category-information-list">
+                                    <li class="catalog__category-information-item">Максимальное давление на входе<br> 241 бар (3500 фунт/кв. дюйм)</li>
+                                    <li class="catalog__category-information-item">Коэффициент расхода Cv=0.06</li>
+                                    <li class="catalog__category-information-item">Одноступенчатые</li>
+                                    <li class="catalog__category-information-item">Уплотнение мембраны типа металл-<br>металл</li>
+                                </ul>
                             </div>
                         </div>
-                        <strong class="catalog__category-item-title">
-                            Регуляторы давления после себя<br> серии PR1
-                        </strong>
-                        <ul class="catalog__category-information-list">
-                            <li class="catalog__category-information-item">Максимальное давление на входе<br> 241 бар (3500 фунт/кв. дюйм)</li>
-                            <li class="catalog__category-information-item">Коэффициент расхода Cv=0.06</li>
-                            <li class="catalog__category-information-item">Одноступенчатые</li>
-                            <li class="catalog__category-information-item">Уплотнение мембраны типа металл-<br>металл</li>
-                        </ul>
-                    </li>
-                    <li class="catalog__category-item">
-                        <img src="local/templates/main/images/catalog/page/c2.png" alt="" class="catalog__category-item-img">
-                        <div class="catalog__category-item-info">
-                            <div class="catalog__category-item-info-box">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.6162 8.38375L12.6666 6.33333M5.54167 9.5C5.54167 8.45018 5.9587 7.44337 6.70104 6.70104C7.44337 5.9587 8.45018 5.54167 9.5 5.54167M16.625 9.5C16.625 13.435 13.435 16.625 9.5 16.625C5.56497 16.625 2.375 13.435 2.375 9.5C2.375 5.56497 5.56497 2.375 9.5 2.375C13.435 2.375 16.625 5.56497 16.625 9.5ZM10.2917 9.5C10.2917 9.93723 9.93723 10.2917 9.5 10.2917C9.06277 10.2917 8.70833 9.93723 8.70833 9.5C8.70833 9.06277 9.06277 8.70833 9.5 8.70833C9.93723 8.70833 10.2917 9.06277 10.2917 9.5Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                до 206 бар
-                            </div>
-                            <div class="catalog__category-item-info-box">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.91732 7.125H11.084M7.91732 10.6875C7.31362 11.036 6.8418 11.5741 6.57503 12.2181C6.30827 12.8621 6.26147 13.5762 6.44189 14.2495C6.62231 14.9228 7.01987 15.5178 7.57291 15.9422C8.12595 16.3666 8.80356 16.5966 9.50065 16.5966C10.1977 16.5966 10.8754 16.3666 11.4284 15.9422C11.9814 15.5178 12.379 14.9228 12.5594 14.2495C12.7398 13.5762 12.693 12.8621 12.4263 12.2181C12.1595 11.5741 11.6877 11.036 11.084 10.6875V3.95833C11.084 3.53841 10.9172 3.13568 10.6202 2.83875C10.3233 2.54181 9.92058 2.375 9.50065 2.375C9.08073 2.375 8.678 2.54181 8.38107 2.83875C8.08413 3.13568 7.91732 3.53841 7.91732 3.95833V10.6875Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                до 70 с
-                            </div>
-                        </div>
-                        <strong class="catalog__category-item-title">
-                            Регуляторы давления после себя<br> серии PR2
-                        </strong>
-                        <ul class="catalog__category-information-list">
-                            <li class="catalog__category-information-item">Максимальное давление на входе<br> 241 бар (3500 фунт/кв. дюйм)</li>
-                            <li class="catalog__category-information-item">Коэффициент расхода Cv=0.06</li>
-                            <li class="catalog__category-information-item">Одноступенчатые</li>
-                            <li class="catalog__category-information-item">Уплотнение мембраны типа металл-<br>металл</li>
-                        </ul>
-                    </li>
-                    <li class="catalog__category-item">
-                        <img src="local/templates/main/images/catalog/page/c3.png" alt="" class="catalog__category-item-img">
-                        <div class="catalog__category-item-info">
-                            <div class="catalog__category-item-info-box">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.6162 8.38375L12.6666 6.33333M5.54167 9.5C5.54167 8.45018 5.9587 7.44337 6.70104 6.70104C7.44337 5.9587 8.45018 5.54167 9.5 5.54167M16.625 9.5C16.625 13.435 13.435 16.625 9.5 16.625C5.56497 16.625 2.375 13.435 2.375 9.5C2.375 5.56497 5.56497 2.375 9.5 2.375C13.435 2.375 16.625 5.56497 16.625 9.5ZM10.2917 9.5C10.2917 9.93723 9.93723 10.2917 9.5 10.2917C9.06277 10.2917 8.70833 9.93723 8.70833 9.5C8.70833 9.06277 9.06277 8.70833 9.5 8.70833C9.93723 8.70833 10.2917 9.06277 10.2917 9.5Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                до 241 бар
-                            </div>
-                            <div class="catalog__category-item-info-box">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.91732 7.125H11.084M7.91732 10.6875C7.31362 11.036 6.8418 11.5741 6.57503 12.2181C6.30827 12.8621 6.26147 13.5762 6.44189 14.2495C6.62231 14.9228 7.01987 15.5178 7.57291 15.9422C8.12595 16.3666 8.80356 16.5966 9.50065 16.5966C10.1977 16.5966 10.8754 16.3666 11.4284 15.9422C11.9814 15.5178 12.379 14.9228 12.5594 14.2495C12.7398 13.5762 12.693 12.8621 12.4263 12.2181C12.1595 11.5741 11.6877 11.036 11.084 10.6875V3.95833C11.084 3.53841 10.9172 3.13568 10.6202 2.83875C10.3233 2.54181 9.92058 2.375 9.50065 2.375C9.08073 2.375 8.678 2.54181 8.38107 2.83875C8.08413 3.13568 7.91732 3.53841 7.91732 3.95833V10.6875Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                до 80 с
-                            </div>
-                        </div>
-                        <strong class="catalog__category-item-title">
-                            Регуляторы давления после себя<br> серии PR3
-                        </strong>
-                        <ul class="catalog__category-information-list">
-                            <li class="catalog__category-information-item">Максимальное давление на входе<br> 241 бар (3500 фунт/кв. дюйм)</li>
-                            <li class="catalog__category-information-item">Коэффициент расхода Cv=0.06</li>
-                            <li class="catalog__category-information-item">Одноступенчатые</li>
-                            <li class="catalog__category-information-item">Уплотнение мембраны типа металл-<br>металл</li>
-                        </ul>
-                    </li>
-                    <li class="catalog__category-item">
-                        <img src="local/templates/main/images/catalog/page/c4.png" alt="" class="catalog__category-item-img">
-                        <div class="catalog__category-item-info">
-                            <div class="catalog__category-item-info-box">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M10.6162 8.38375L12.6666 6.33333M5.54167 9.5C5.54167 8.45018 5.9587 7.44337 6.70104 6.70104C7.44337 5.9587 8.45018 5.54167 9.5 5.54167M16.625 9.5C16.625 13.435 13.435 16.625 9.5 16.625C5.56497 16.625 2.375 13.435 2.375 9.5C2.375 5.56497 5.56497 2.375 9.5 2.375C13.435 2.375 16.625 5.56497 16.625 9.5ZM10.2917 9.5C10.2917 9.93723 9.93723 10.2917 9.5 10.2917C9.06277 10.2917 8.70833 9.93723 8.70833 9.5C8.70833 9.06277 9.06277 8.70833 9.5 8.70833C9.93723 8.70833 10.2917 9.06277 10.2917 9.5Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                до 241 бар
-                            </div>
-                            <div class="catalog__category-item-info-box">
-                                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M7.91732 7.125H11.084M7.91732 10.6875C7.31362 11.036 6.8418 11.5741 6.57503 12.2181C6.30827 12.8621 6.26147 13.5762 6.44189 14.2495C6.62231 14.9228 7.01987 15.5178 7.57291 15.9422C8.12595 16.3666 8.80356 16.5966 9.50065 16.5966C10.1977 16.5966 10.8754 16.3666 11.4284 15.9422C11.9814 15.5178 12.379 14.9228 12.5594 14.2495C12.7398 13.5762 12.693 12.8621 12.4263 12.2181C12.1595 11.5741 11.6877 11.036 11.084 10.6875V3.95833C11.084 3.53841 10.9172 3.13568 10.6202 2.83875C10.3233 2.54181 9.92058 2.375 9.50065 2.375C9.08073 2.375 8.678 2.54181 8.38107 2.83875C8.08413 3.13568 7.91732 3.53841 7.91732 3.95833V10.6875Z" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                                до 80 с
-                            </div>
-                        </div>
-                        <strong class="catalog__category-item-title">
-                            Регуляторы давления после себя<br> серии PPR1 для чистых сред
-                        </strong>
-                        <ul class="catalog__category-information-list">
-                            <li class="catalog__category-information-item">Максимальное давление на входе<br> 241 бар (3500 фунт/кв. дюйм)</li>
-                            <li class="catalog__category-information-item">Коэффициент расхода Cv=0.06</li>
-                            <li class="catalog__category-information-item">Одноступенчатые</li>
-                            <li class="catalog__category-information-item">Уплотнение мембраны типа металл-<br>металл</li>
-                        </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
                 <div class="catalog__filter catalog__filter_mb">
                     <div class="catalog__filter-sort">
-                        <p class="catalog__filter-sort-title">Сортировать:</p>
-                        <button class="catalog__filter-sort-btn" type="button">По возрастанию цены</button>
-                        <button class="catalog__filter-sort-btn" type="button">По убыванию цены</button>
-                        <button class="catalog__filter-sort-btn" type="button">Попопулярности</button>
+                        <div class="catalog__filter-sort-list"></div>
+                        <p class="catalog__filter-sort-title">
+                            <span class="catalog__filter-sort-title-decor">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17 3V21M17 3L20 6M17 3L14 6M10 18L7 21M7 21L4 18M7 21V3" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            Сортировать:
+                            <span class="catalog__filter-sort-text-mob"></span>
+                        </p>
+                        <button class="catalog__filter-sort-btn" type="button" data-da=".catalog__filter-sort-list, 480, 0">По возрастанию цены</button>
+                        <button class="catalog__filter-sort-btn" type="button" data-da=".catalog__filter-sort-list, 480, 1">По убыванию цены</button>
+                        <button class="catalog__filter-sort-btn" type="button" data-da=".catalog__filter-sort-list, 480, 2">Попопулярности</button>
                     </div>
                     <div class="catalog__filter-position">
                         <button class="catalog__filter-position-btn is-active" type="button" data-position="col" aria-label="В колонки">

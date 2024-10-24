@@ -358,6 +358,11 @@
     .breadcrumbs{
         padding-block: 20px 21px;
     }
+    @media (max-width: 480px) {
+      .breadcrumbs {
+        padding-block: 23px 25px;
+      }
+    }
 </style>
 
 <div class="breadcrumbs container">
@@ -379,12 +384,22 @@
 </div>
 <!-- prodcut -->
 <section class="card container">
-    <a href="catalog.html" class="catalog__link-back card__link-back card__link-back_mb">
+    <div class="card__top">
+      <a href="catalog.html" class="catalog__link-back card__link-back card__link-back_mb">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M5 12H19M5 12L9 16M5 12L9 8" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         К выбору товаров
-    </a>
+      </a>
+      <div class="card__art-copyright copy-text" data-copy-text="M32-U-M32">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.2717 0H2.5444C1.74074 0 1.08984 0.650898 1.08984 1.45456V11.6364H2.5444V1.45456H11.2717V0Z" fill="black"/>
+          <path d="M13.4546 2.90918H5.45456C4.65093 2.90918 4 3.56008 4 4.36374V14.5456C4 15.3492 4.6509 16.0001 5.45456 16.0001H13.4546C14.2582 16.0001 14.9091 15.3492 14.9091 14.5456V4.36374C14.9091 3.56011 14.2582 2.90918 13.4546 2.90918ZM13.4546 14.5456H5.45456V4.36374H13.4546V14.5456Z" fill="black"/>
+        </svg>
+        Артикул: <strong>M32-U-M32</strong>
+      </div>
+    </div>
+    
     <h2 class="card__title card__title_mb title">M32-U-M32</h2>
     <div class="card__inner card__inner_mb">
         <div class="card__slider-parent">
@@ -420,17 +435,25 @@
                 <div class="card__slider-big">
                     <div class="swiper-wrapper">
                         <div class="card__slider-big-slide swiper-slide">
-                            <img src="local/templates/main/images/card/big.png" alt="">
+                            <a href="local/templates/main/images/card/big.png" data-fancybox="gallery">
+                              <img src="local/templates/main/images/card/big.png" alt="">
+                            </a>
                         </div>
                         <div class="card__slider-big-slide swiper-slide">
+                          <a href="local/templates/main/images/card/big.png" data-fancybox="gallery">
                             <img src="local/templates/main/images/card/big.png" alt="">
+                          </a>
                         </div>
                         <div class="card__slider-big-slide swiper-slide">
+                          <a href="local/templates/main/images/card/big.png" data-fancybox="gallery">
                             <img src="local/templates/main/images/card/big.png" alt="">
+                          </a>
                         </div>
                         <div class="card__slider-big-slide swiper-slide">
+                          <a href="local/templates/main/images/card/big.png" data-fancybox="gallery">
                             <img src="local/templates/main/images/card/big.png" alt="">
-                        </div>
+                          </a>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -459,13 +482,14 @@
                             Рабочее давление, бар
                         </strong>
                     </li>
-                    <li class="conf-fitings__product-bottom-item">
+                    <li class="conf-fitings__product-bottom-item" data-da=".conf-fitings__product-bottom-list-mobile, 480, 1">
                         Нерж.сталь 316: <strong>447</strong>
                     </li>
-                    <li class="conf-fitings__product-bottom-item">
+                    <li class="conf-fitings__product-bottom-item" data-da=".conf-fitings__product-bottom-list-mobile, 480, 2">
                         Латунь: <strong>320</strong>
                     </li>
                 </ul>
+                <ul class="conf-fitings__product-bottom-list-mobile"></ul>
             </div>
             <div class="conf-fitings__product-buttons count-parent" data-count="1">
                 <div class="count">
@@ -496,7 +520,11 @@
         </div>
         <div class="card__description">
             <div class="card__description-files">
-                <img src="local/templates/main/images/card/pdf.png" alt="">
+                <picture>
+                  <source srcset="local/templates/main/images/card/pdf.png" media="(min-width: 481px)">
+                  <source srcset="local/templates/main/images/card/pdf_mob.png" media="(max-width: 480px)">
+                  <img src="local/templates/main/images/card/pdf.png" alt="">
+                </picture>
                 <a href="" class="card__description-files-link">
                     Скачать каталог PDF
                 </a>
@@ -510,7 +538,8 @@
                     Запросить КП
                 </a>
             </div>
-            <p class="card__description-text">
+            <div class="card__description-box">
+              <p class="card__description-text">
                 Данный товар является аналогом<br> 
                 продукции следующих брендов:
             </p>
@@ -525,6 +554,7 @@
                     <path d="M3.25 4.875L6.5 8.125L9.75 4.875" stroke="#005E9E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
             </a>
+            </div>
         </div>
     </div>
     <div class="card-slider card-slider_mb">
@@ -542,8 +572,10 @@
                       <img src="local/templates/main/images/catalog-item/1.png" alt="BS1-GFS8-08-">
                     </picture>
                   </a>
-                  <p class="product__status product__status_success">В наличии</p>
-                  <p class="product__article">Артикул аналога Hy-Lok: W3-S28H2</p>
+                  <div class="new-products__slide-top">
+                    <p class="product__status product__status_success">В наличии</p>
+                    <p class="product__article" data-desc-text="Артикул аналога" data-mob-text="Арт.аналога"><span>Артикул аналога</span> Hy-Lok: W3-S28H2</p>
+                  </div>
                   <a href="#!" class="product__name">BS1-GFS8-08-</a>
                   <p class="product__info">от 1/16 до 2 дюймов ; от 6 до 50 мм</p>
                   <div class="product__buttons">
@@ -566,8 +598,10 @@
                       <img src="local/templates/main/images/catalog-item/2.png" alt="BS1-FSW6-07-">
                     </picture>
                   </a>
-                  <p class="product__status product__status_error">Под заказ </p>
-                  <p class="product__article">Артикул аналога Hy-Lok: W3-S28H2</p>
+                  <div class="new-products__slide-top">
+                    <p class="product__status product__status_error">Под заказ </p>
+                    <p class="product__article"data-desc-text="Артикул аналога" data-mob-text="Арт.аналога"><span>Артикул аналога</span> Hy-Lok: W3-S28H2</p>
+                  </div>
                   <a href="#!" class="product__name">BS1-FSW6-07-</a>
                   <p class="product__info">т 1/16 до 1 дюйма</p>
                   <div class="product__buttons">
@@ -590,8 +624,10 @@
                       <img src="local/templates/main/images/catalog-item/3.png" alt="BS1-GFS4-04-">
                     </picture>
                   </a>
-                  <p class="product__status product__status_success">В наличии</p>
-                  <p class="product__article">Артикул аналога Hy-Lok: W3-S28H2</p>
+                  <div class="new-products__slide-top">
+                    <p class="product__status product__status_success">В наличии</p>
+                    <p class="product__article"data-desc-text="Артикул аналога" data-mob-text="Арт.аналога"><span>Артикул аналога</span> Hy-Lok: W3-S28H2</p>
+                  </div>
                   <a href="#!" class="product__name">BS1-GFS4-04-</a>
                   <p class="product__info">Давление до 68.9 бар</p>
                   <div class="product__buttons">
@@ -614,8 +650,10 @@
                       <img src="local/templates/main/images/catalog-item/4.png" alt="BS1-GFS8-08-">
                     </picture>
                   </a>
-                  <p class="product__status product__status_success">В наличии</p>
-                  <p class="product__article">Артикул аналога Hy-Lok: W3-S28H2</p>
+                  <div class="new-products__slide-top">
+                    <p class="product__status product__status_success">В наличии</p>
+                    <p class="product__article"data-desc-text="Артикул аналога" data-mob-text="Арт.аналога"><span>Артикул аналога</span> Hy-Lok: W3-S28H2</p>
+                  </div>
                   <a href="#!" class="product__name">BS1-GFS8-08-</a>
                   <p class="product__info">от 1/16 до 2 дюймов ; от 6 до 50 мм</p>
                   <div class="product__buttons">
@@ -638,8 +676,10 @@
                       <img src="local/templates/main/images/catalog-item/1.png" alt="BS1-GFS8-08-">
                     </picture>
                   </a>
-                  <p class="product__status product__status_success">В наличии</p>
-                  <p class="product__article">Артикул аналога Hy-Lok: W3-S28H2</p>
+                  <div class="new-products__slide-top">
+                    <p class="product__status product__status_success">В наличии</p>
+                    <p class="product__article" data-desc-text="Артикул аналога" data-mob-text="Арт.аналога"><span>Артикул аналога</span> Hy-Lok: W3-S28H2</p>
+                  </div>
                   <a href="#!" class="product__name">BS1-GFS8-08-</a>
                   <p class="product__info">от 1/16 до 2 дюймов ; от 6 до 50 мм</p>
                   <div class="product__buttons">
@@ -662,8 +702,10 @@
                       <img src="local/templates/main/images/catalog-item/2.png" alt="BS1-FSW6-07-">
                     </picture>
                   </a>
-                  <p class="product__status product__status_error">Под заказ </p>
-                  <p class="product__article">Артикул аналога Hy-Lok: W3-S28H2</p>
+                  <div class="new-products__slide-top">
+                    <p class="product__status product__status_error">Под заказ </p>
+                    <p class="product__article"data-desc-text="Артикул аналога" data-mob-text="Арт.аналога"><span>Артикул аналога</span> Hy-Lok: W3-S28H2</p>
+                  </div>
                   <a href="#!" class="product__name">BS1-FSW6-07-</a>
                   <p class="product__info">т 1/16 до 1 дюйма</p>
                   <div class="product__buttons">
@@ -686,8 +728,10 @@
                       <img src="local/templates/main/images/catalog-item/3.png" alt="BS1-GFS4-04-">
                     </picture>
                   </a>
-                  <p class="product__status product__status_success">В наличии</p>
-                  <p class="product__article">Артикул аналога Hy-Lok: W3-S28H2</p>
+                  <div class="new-products__slide-top">
+                    <p class="product__status product__status_success">В наличии</p>
+                    <p class="product__article"data-desc-text="Артикул аналога" data-mob-text="Арт.аналога"><span>Артикул аналога</span> Hy-Lok: W3-S28H2</p>
+                  </div>
                   <a href="#!" class="product__name">BS1-GFS4-04-</a>
                   <p class="product__info">Давление до 68.9 бар</p>
                   <div class="product__buttons">
@@ -710,8 +754,10 @@
                       <img src="local/templates/main/images/catalog-item/4.png" alt="BS1-GFS8-08-">
                     </picture>
                   </a>
-                  <p class="product__status product__status_success">В наличии</p>
-                  <p class="product__article">Артикул аналога Hy-Lok: W3-S28H2</p>
+                  <div class="new-products__slide-top">
+                    <p class="product__status product__status_success">В наличии</p>
+                    <p class="product__article" data-desc-text="Артикул аналога" data-mob-text="Арт.аналога"><span>Артикул аналога</span> Hy-Lok: W3-S28H2</p>
+                  </div>
                   <a href="#!" class="product__name">BS1-GFS8-08-</a>
                   <p class="product__info">от 1/16 до 2 дюймов ; от 6 до 50 мм</p>
                   <div class="product__buttons">
@@ -730,6 +776,7 @@
             </div>
             <div class="new-products__slider-controll">
               <div class="new-products__slider-scrollbar"></div>
+              <div class="new-products__pagination"></div>
               <div class="new-products__slider-buttons">
                 <button class="new-products__slider-button-prev" type="button" aria-label="Перейти к предыдущиму слайду">
                   <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -747,7 +794,7 @@
     </div>
 </section>
 <div class="bg-gray">
-    <div class="analog analog_pt-101 analog_pb-126 analog_mb_80 container">
+    <div class="analog analog_pt-101 analog_pb-126 analog_mb_80 container card-analog">
       <h2 class="analog__title analog__title_mb-65 title">
         У нас Вы можете приобрести качественные аналоги
       </h2>
