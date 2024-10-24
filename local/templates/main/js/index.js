@@ -11,6 +11,7 @@ import count from "./components/count.js";
 import catalogChangePosition from "./components/catalogChangePosition.js";
 import catalogInputChecked from "./components/catalogInputs.js";
 import textProductResize from "./components/textProductResize.js";
+import copyText from "./components/copyText.js";
 
 useDynamicAdapt();
 scrollPage();
@@ -29,3 +30,6 @@ count();
 catalogChangePosition();
 catalogInputChecked();
 textProductResize();
+copyText();
+
+Fancybox.bind("[data-fancybox]");

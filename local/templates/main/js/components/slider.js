@@ -65,9 +65,12 @@ const createdSliders = () => {
                     slidesPerView: 2,
                     spaceBetween: 20,
                 },
-                280: {
+                400: {
                     slidesPerView: 1.55,
                     spaceBetween: 10,
+                },
+                280: {
+                    slidesPerView: 1,
                 }
             }
         });
@@ -187,6 +190,17 @@ const createdSliders = () => {
                 nextEl: ".card__slider-min-btn_next",
                 prevEl: ".card__slider-min-btn_prev",
             },
+
+            breakpoints: {
+                481: {
+                    direction: 'vertical',
+                    spaceBetween: 15,
+                },
+                280:{
+                    direction: 'horizontal',
+                    spaceBetween: 17,
+                }
+            }
         });
         let swiper2 = new Swiper(".card__slider-big", {
             spaceBetween: 15,
@@ -195,7 +209,79 @@ const createdSliders = () => {
             thumbs: {
                 swiper: swiper,
             },
+
+            breakpoints: {
+                481: {
+                    direction: 'vertical',
+                },
+                280:{
+                    direction: 'horizontal',
+                }
+            }
         });
+    }
+
+    if(document.querySelector('.catalog__category-list')) {
+        const slider = document.querySelector('.catalog__category-list');
+        const sliderWrapper = slider.querySelector('.swiper-wrapper');
+
+        let swiper = new Swiper('.catalog__category-list', {
+            direction: 'horizontal',
+
+            breakpoints: {
+                481: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                400: {
+                    slidesPerView: 1.55,
+                    spaceBetween: 20
+                },
+                280: {
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                }
+            }
+        });
+
+        
+
+        const changeClass = ()=> {
+            console.log(window.innerWidth);
+            
+            if(window.innerWidth <= 992) {
+                sliderWrapper.classList.remove('is-columns');
+
+                let swiper = new Swiper('.catalog__category-list', {
+                    direction: 'horizontal',
+                    loop: false,
+                    
+                    breakpoints: {
+                        800: {
+                            slidesPerView: 2,
+                            spaceBetween: 15
+                        },
+                        400: {
+                            slidesPerView: 1.2,
+                            spaceBetween: 11
+                        },
+                        280: {
+                            slidesPerView: 1,
+                            spaceBetween: 20
+                        }
+                    }
+                });
+
+            } else {
+                sliderWrapper.classList.add('is-columns');
+                
+                swiper.destroy();
+            }
+        }
+
+        changeClass();
+
+        window.addEventListener("resize", ()=> changeClass());
     }
 }
 

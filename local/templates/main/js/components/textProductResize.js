@@ -3,6 +3,8 @@ const textProductResize = () => {
     const backsetItems = document.querySelectorAll('.basket-table__body-row');
 
     if(products){
+        console.log(true);
+        
         const changeSizePage = () => {
             products.forEach(prod=> {
                 const prodArt = prod.querySelector('.product__article');
