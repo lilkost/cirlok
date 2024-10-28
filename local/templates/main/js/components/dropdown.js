@@ -134,6 +134,24 @@ const dropdown = () => {
 
         changeOpenDropdown(parent, openNode);
     }
+
+    if(document.querySelector('.header-catalog__list')) {
+        const parent = document.querySelectorAll('.header-catalog__list');
+        const openNode = '.header-catalog__item_title';
+
+        changeOpenDropdown(parent, openNode);
+
+
+        const buttonOpen = document.querySelector('.header-catalog__open-button');
+        const body = document.querySelector('.header-catalog__body');
+
+        if(!buttonOpen) return;
+
+        buttonOpen.addEventListener("click", ()=> {
+            body.classList.toggle('is-open');
+            buttonOpen.classList.toggle('is-active');
+        });
+    }
 }
 
 export default dropdown;

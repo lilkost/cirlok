@@ -19,6 +19,20 @@ const scrollPage = () => {
         else {
             headerBottomRow.classList.remove('is-hidden');
         }
+
+
+        // скрыть кнопки с права
+        const footer = document.querySelector('footer'); // Замените 'footer' на ваш селектор футера
+        const rect = footer.getBoundingClientRect();
+        const buttonRight = document.querySelector('.buttons-right');
+        
+        // Проверяем, виден ли футер в области просмотра
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            buttonRight.style.right = '-500px'
+        }
+        else {
+            buttonRight.style.right = '0px';
+        }
     }
 
     window.addEventListener("scroll", (e)=> {

@@ -157,6 +157,13 @@ const modal = () => {
         });
 
     }
+
+    if(document.querySelector('.buttons-right')){
+        const body = document.querySelector('.buttons-right');
+        const buttonClose = document.querySelector('.buttons-right__close-btn');
+
+        buttonClose.addEventListener("click", ()=> body.style.right = '-500px');
+    }
 }
 
 export default modal;
